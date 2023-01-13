@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1004760956190",
+    "project_id": "giris-a",
+    "storage_bucket": "giris-a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1004760956190:android:ec21272d2e7bda47601d0f",
+        "android_client_info": {
+          "package_name": "com.example.giris_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1004760956190-tta6b9aal6cpuhgbpq2s0lsdudufdhvv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCmrgnvEkD007JNJSzdR6CEC8i0U5ejolM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1004760956190-tta6b9aal6cpuhgbpq2s0lsdudufdhvv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
