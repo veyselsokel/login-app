@@ -10,23 +10,24 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-
   Future<FirebaseApp> _initializeFirebase() async {
     FirebaseApp firebaseApp = await Firebase.initializeApp();
     return firebaseApp;
   }
 
-
   @override
   Widget build(BuildContext context) {
-    return Scaffold (body: FutureBuilder(
-      future: _initializeFirebase(), 
+    return Scaffold(
+        body: FutureBuilder(
+      future: _initializeFirebase(),
       builder: ((context, snapshot) {
-      if(snapshot.connectionState==ConnectionState.done){
-        return LoginScreen();
-      }
-      return const Center(child: CircularProgressIndicator(),
-      );
-    }),));
+        if (snapshot.connectionState == ConnectionState.done) {
+          return LoginScreen();
+        }
+        return const Center(
+          child: CircularProgressIndicator(),
+        );
+      }),
+    ));
   }
 }

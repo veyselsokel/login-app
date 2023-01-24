@@ -1,4 +1,6 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:giris_app/screens/login_screen.dart';
 
 class ProfileScreen extends StatefulWidget {
   const ProfileScreen({super.key});
@@ -12,7 +14,11 @@ class _ProfileScreenState extends State<ProfileScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(child: Text("welcome to your profile page")),
-      floatingActionButton: FloatingActionButton(onPressed: () => Navigator.pop(context),),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {
+          FirebaseAuth.instance.signOut();
+        },
+      ),
     );
   }
 }
